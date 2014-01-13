@@ -1,0 +1,39 @@
+{
+  "name": "add-event-listener",
+  "version": "0.0.0",
+  "description": "add event listeners in IE and ... everywhere else",
+  "main": "index.js",
+  "scripts": {
+    "test": "testling ."
+  },
+  "testling": {
+    "files": [
+      "./test.js"
+    ],
+    "browsers": {
+      "ie": "8..latest",
+      "ff": "12..latest",
+      "chrome": "24..latest",
+      "safari": "4..latest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/add-event-listener.git"
+  },
+  "keywords": [
+    "addEventListener",
+    "attachEvent",
+    "DOMEvent"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisdickinson/add-event-listener/issues"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2",
+    "testling": "~1.5.6",
+    "browserify": "~3.19.1"
+  }
+}
