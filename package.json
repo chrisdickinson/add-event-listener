@@ -1,6 +1,6 @@
 {
   "name": "add-event-listener",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "add event listeners in IE and ... everywhere else",
   "main": "index.js",
   "scripts": {
