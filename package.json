@@ -1,6 +1,6 @@
 {
   "name": "add-event-listener",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "add event listeners in IE and ... everywhere else",
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "url": "https://github.com/chrisdickinson/add-event-listener/issues"
   },
   "devDependencies": {
-    "tape": "~2.3.2",
-    "testling": "~1.5.6",
-    "browserify": "~3.19.1"
+    "browserify": "^16.2.3",
+    "tape": "^4.9.1",
+    "testling": "^1.7.1"
   }
 }
