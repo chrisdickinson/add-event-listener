@@ -29,13 +29,13 @@ This package exports `addEventListener` (with a polyfill for `attachEvent`).
 
 `addEventListener` and `removeEventListener` are available as properties on the export.
 
-### addEventListener(element, eventName, listener, useCapture=false) -> undefined
+### addEventListener(element, eventName, listener, useCapture=false|options?) -> undefined
 
 Adds an event listener to an element. On IE&lt;9, uses `attachEvent`. **WARNING**: If `useCapture` is
 true and this function is run on IE8, an exception will be thrown (since event capturing
 cannot be emulated.)
 
-### removeEventListener(element, eventName, listener, useCapture=false) -> undefined
+### removeEventListener(element, eventName, listener, useCapture=false|options?) -> undefined
 
 Remove an event listener from an element.
 

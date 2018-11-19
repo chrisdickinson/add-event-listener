@@ -24,10 +24,13 @@ test(function(assert) {
       return
     }
 
-    add(document.body, 'click', afterclick)
-    remove(el, 'click', onclick)
+    // otherwise dispatches unfinished event to afterclick too
+    setTimeout(function () {
+      add(document.body, 'click', afterclick)
+      remove(el, 'click', onclick)
 
-    trigger()
+      trigger()
+    })
   }
 
   function afterclick() {
